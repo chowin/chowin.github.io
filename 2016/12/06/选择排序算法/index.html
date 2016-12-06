@@ -6,102 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>二进制编码 | Wenix&#39;s Blog</title>
+  <title>排序算法 | Wenix&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="原码、反码、补码原码:
-为了区分二进制的正负，高位增添一个符号位，0取正，1取负。这种形式的二进制数称为原码。
-
-例如:
-
-
-
--3
-3
-
-
-
-
-111
-011
-
-
-
-反码：
-按照原码，符号位不变，其它位取反。
-
-补码：
-可以通过钟表来理解：&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;假如发现10点钟时，钟表是5点，把表拨回到5点。
-
-
-往回拨5格  10-5；
-往前拨7格  10+7；
-
-我">
+  <meta name="description" content="选择排序算法123456789101112131415161718192021include &amp;lt;iostream&amp;gt;using namespace std;int const n=10;int main()&amp;#123;    int a[10]=&amp;#123;1,5,9,12,6,4,8,3,10,2&amp;#125;;    for(int i=0;i&amp;lt;10-1;i++)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="二进制编码">
-<meta property="og:url" content="http://yoursite.com/2016/11/27/原码、反码、补码/index.html">
+<meta property="og:title" content="排序算法">
+<meta property="og:url" content="http://yoursite.com/2016/12/06/选择排序算法/index.html">
 <meta property="og:site_name" content="Wenix's Blog">
-<meta property="og:description" content="原码、反码、补码原码:
-为了区分二进制的正负，高位增添一个符号位，0取正，1取负。这种形式的二进制数称为原码。
-
-例如:
-
-
-
--3
-3
-
-
-
-
-111
-011
-
-
-
-反码：
-按照原码，符号位不变，其它位取反。
-
-补码：
-可以通过钟表来理解：&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;假如发现10点钟时，钟表是5点，把表拨回到5点。
-
-
-往回拨5格  10-5；
-往前拨7格  10+7；
-
-我">
-<meta property="og:updated_time" content="2016-11-29T09:34:47.397Z">
+<meta property="og:description" content="选择排序算法123456789101112131415161718192021include &amp;lt;iostream&amp;gt;using namespace std;int const n=10;int main()&amp;#123;    int a[10]=&amp;#123;1,5,9,12,6,4,8,3,10,2&amp;#125;;    for(int i=0;i&amp;lt;10-1;i++)">
+<meta property="og:updated_time" content="2016-12-06T14:17:29.313Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="二进制编码">
-<meta name="twitter:description" content="原码、反码、补码原码:
-为了区分二进制的正负，高位增添一个符号位，0取正，1取负。这种形式的二进制数称为原码。
-
-例如:
-
-
-
--3
-3
-
-
-
-
-111
-011
-
-
-
-反码：
-按照原码，符号位不变，其它位取反。
-
-补码：
-可以通过钟表来理解：&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;假如发现10点钟时，钟表是5点，把表拨回到5点。
-
-
-往回拨5格  10-5；
-往前拨7格  10+7；
-
-我">
+<meta name="twitter:title" content="排序算法">
+<meta name="twitter:description" content="选择排序算法123456789101112131415161718192021include &amp;lt;iostream&amp;gt;using namespace std;int const n=10;int main()&amp;#123;    int a[10]=&amp;#123;1,5,9,12,6,4,8,3,10,2&amp;#125;;    for(int i=0;i&amp;lt;10-1;i++)">
   
     <link rel="alternative" href="/atom.xml" title="Wenix&#39;s Blog" type="application/atom+xml">
   
@@ -229,7 +145,7 @@
 </nav>
 
       <div class="body-wrap">
-        <article id="post-原码、反码、补码" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-选择排序算法" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -239,7 +155,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      二进制编码
+      排序算法
     </h1>
   
 
@@ -247,65 +163,26 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="原码、反码、补码"><a href="#原码、反码、补码" class="headerlink" title="原码、反码、补码"></a>原码、反码、补码</h1><h2 id="原码"><a href="#原码" class="headerlink" title="原码:"></a>原码:</h2><blockquote>
-<p>为了区分二进制的正负，高位增添一个符号位，0取正，1取负。这种形式的二进制数称为原码。</p>
-</blockquote>
-<p><strong>例如:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">-3</th>
-<th style="text-align:center">3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">111</td>
-<td style="text-align:center">011</td>
-</tr>
-</tbody>
-</table>
-<h2 id="反码："><a href="#反码：" class="headerlink" title="反码："></a>反码：</h2><blockquote>
-<p>按照原码，符号位不变，其它位取反。</p>
-</blockquote>
-<h2 id="补码："><a href="#补码：" class="headerlink" title="补码："></a>补码：</h2><blockquote>
-<p>可以通过钟表来理解：<br>&nbsp;&nbsp;&nbsp;&nbsp;假如发现10点钟时，钟表是5点，把表拨回到5点。</p>
-</blockquote>
-<ul>
-<li>往回拨5格  10-5；</li>
-<li>往前拨7格  10+7；</li>
-</ul>
-<p>我们可以看出10-5的运算可以是10+7的运算，而5和7相加产生的模数12，我们称7为-5对模12的补数，也称为补码。<br>如果把时钟顺时针看成+，逆时针看成-，那么这个时表就可以表示正负数了，正数从0到12，负数从-12到-1；<br><strong>通过上述所述，我们可以写出原码，反码，补码的数学表达式</strong></p>
-<p><strong>原码：</strong><br>$$<br>(-1)^{X_{w-1}}\times(\sum_{i=0}^{w-2}X_i 2^i)<br>$$<br><strong>反码：</strong><br>$$<br>-X_{w-1}(2^{w-1}-1)+\sum_{i=0}^{w-2}X_i2^i<br>$$<br><strong>补码：</strong><br>$$<br>-X_{w-1}2^{w-1}+\sum_{i=0}^{w-2}X^i2^i<br>$$</p>
+        <hr>
+<h4 id="选择排序算法"><a href="#选择排序算法" class="headerlink" title="选择排序算法"></a>选择排序算法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">include &lt;iostream&gt;</div><div class="line">using namespace std;</div><div class="line">int const n=10;</div><div class="line">int main()</div><div class="line">&#123;</div><div class="line">    int a[10]=&#123;1,5,9,12,6,4,8,3,10,2&#125;;</div><div class="line">    for(int i=0;i&lt;10-1;i++)</div><div class="line">        for(int j=i+1;j&lt;10;j++)</div><div class="line">        &#123;</div><div class="line">            if(a[i]&lt;a[j])</div><div class="line">            &#123;</div><div class="line">                a[i]=a[i]+a[j];</div><div class="line">                a[j]=a[i]-a[j];</div><div class="line">                a[i]=a[i]-a[j];</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        for(int k=0;k&lt;10;k++)</div><div class="line">        &#123;</div><div class="line">            cout&lt;&lt;a[k]&lt;&lt;&quot; &quot;;</div><div class="line">        &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <hr>
-<h3 id="原码和反码的关系："><a href="#原码和反码的关系：" class="headerlink" title="原码和反码的关系："></a>原码和反码的关系：</h3><ul>
-<li>当$x_{w-1}=0$时，两者相等</li>
-<li>当$x_{w-1}=1$时，<br>原码：$-\sum_{i=0}^{w-2}x^i2^i$<br>反码:$-(2^{w-1}-1)+\sum_{i=0}^{w-2}x^i2^i$<br>对原码补高位得：<br>$-[(2{^{w-1}-1})-\overline{(\sum_{i=0}^{w-2}x^i2^i)}]$<br>整理如下：<br>$-({2^{w-1}}-1)+\overline{(\sum_{i=0}^{w-2}x^i2^i)}$<br><strong>结论：原码变反码，除符号位不变，其他取反。</strong></li>
-</ul>
-<h3 id="反码和补码之间的关系"><a href="#反码和补码之间的关系" class="headerlink" title="反码和补码之间的关系"></a>反码和补码之间的关系</h3><ul>
-<li>当$x_{w-1}=0$时，两者相等</li>
-<li>当$x_{w-1}=1$时<br>反码：$-(2^{w-1}-1)+\sum_{i=0}^{w-2}x^i2^i$</li>
-</ul>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;补码：$-2^{w-1}+\sum_{i=0}^{w-2}x^i2^i$<br><strong>结论：很明显反码变补码，要低位加1。</strong></p>
-<h3 id="正数的补码和其负数的补码关系"><a href="#正数的补码和其负数的补码关系" class="headerlink" title="正数的补码和其负数的补码关系"></a>正数的补码和其负数的补码关系</h3><p>存在正数N：则$x_{w-1}=0$那么<br>N=$0+\sum_{i=0}^{w-2}x^i2^i$;</p>
-<p>-N=$-\sum_{i=0}^{w-2}x^i2^i$;<br>通过观察，我们可以对-N补高位：<br>-N=$-[(2^{w-1}-1)-\overline{\sum_{i=0}^{w-2}x^i2^i}]$</p>
-<p>-N=$-2^{w-1}+\overline{\sum_{i=0}^{w-2}x^i2^i}+1$<br><strong>结论：通过上市可以看出：正数的负数的补码是所有为取反后加1。</strong></p>
-<h3 id="补码和无符号之间的关系："><a href="#补码和无符号之间的关系：" class="headerlink" title="补码和无符号之间的关系："></a>补码和无符号之间的关系：</h3><!-- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script> -->
-<p><audio src="/mp3/sunny.mp3" autoplay="true"></audio></p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=254359&auto=1&height=66"></iframe>
-
+<h4 id="优化的选择排序算法"><a href="#优化的选择排序算法" class="headerlink" title="优化的选择排序算法"></a>优化的选择排序算法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">#include &lt;iostream&gt;</div><div class="line">using namespace std;</div><div class="line">int main()</div><div class="line">&#123;</div><div class="line">    int a[10]=&#123;1,5,9,12,6,4,8,3,10,2&#125;,index;</div><div class="line">    for(int i=0;i&lt;10-1;i++)</div><div class="line">    &#123;</div><div class="line">        index=i;</div><div class="line">        for(int j=i+1;j&lt;10;j++)</div><div class="line">        &#123;</div><div class="line">            if(a[index]&lt;a[j])</div><div class="line">            &#123;</div><div class="line">                index=j;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        if(i!=index)</div><div class="line">        &#123;</div><div class="line">            a[i]=a[i]+a[index];</div><div class="line">            a[index]=a[i]-a[index];</div><div class="line">            a[i]=a[i]-a[index];</div><div class="line">        &#125;       </div><div class="line">    &#125;</div><div class="line">    for(int k=0;k&lt;10;k++)</div><div class="line">        cout&lt;&lt;a[k]&lt;&lt;&quot; &quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<hr>
+<h4 id="冒泡排序算法"><a href="#冒泡排序算法" class="headerlink" title="冒泡排序算法"></a>冒泡排序算法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">#include &lt;iostream&gt;</div><div class="line">using namespace std;</div><div class="line">int main()</div><div class="line">&#123;</div><div class="line">    int a[10]=&#123;1,5,9,12,6,4,8,3,10,2&#125;;</div><div class="line">    for(int i=0;i&lt;10-1;i++)</div><div class="line">    &#123;</div><div class="line">        for(int j=0;j&lt;10-1-i;j++)</div><div class="line">        &#123;</div><div class="line">            if(a[j]&lt;a[j+1])</div><div class="line">            &#123;</div><div class="line">                a[j]=a[j+1]+a[j];</div><div class="line">                a[j+1]=a[j]-a[j+1];</div><div class="line">                a[j]=a[j]-a[j+1];</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    for(int k=0;k&lt;10;k++)</div><div class="line">    &#123;</div><div class="line">        cout&lt;&lt;a[k]&lt;&lt;&quot; &quot;;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<hr>
+<h4 id="插入排序算法"><a href="#插入排序算法" class="headerlink" title="插入排序算法"></a>插入排序算法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">#include &lt;iostream&gt;</div><div class="line">using namespace std;</div><div class="line">int main()</div><div class="line">&#123;</div><div class="line">    int a[10]=&#123;1,5,9,12,6,4,8,3,10,2&#125;;</div><div class="line">    int temp;</div><div class="line">    for(int i=0;i&lt;10;i++)</div><div class="line">    &#123;</div><div class="line">        for(int j=i+1;j&gt;0;j--)</div><div class="line">        &#123;</div><div class="line">            if(a[j]&gt;a[j-1])</div><div class="line">            &#123;</div><div class="line">                a[j]=a[j]+a[j-1];</div><div class="line">                a[j-1]=a[j]-a[j-1];</div><div class="line">                a[j]=a[j]-a[j-1];</div><div class="line">                // temp=a[j];</div><div class="line">                // a[j]=a[j-1];</div><div class="line">                // a[j-1]=temp;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    for(int k=0;k&lt;10;k++)</div><div class="line">    &#123;</div><div class="line">        cout&lt;&lt;a[k]&lt;&lt;&quot; &quot;;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/11/27/原码、反码、补码/" class="archive-article-date">
-  	<time datetime="2016-11-27T10:38:45.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-27</time>
+      <a href="/2016/12/06/选择排序算法/" class="archive-article-date">
+  	<time datetime="2016-12-06T14:38:45.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-12-06</time>
 </a>
       
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机基础/">计算机基础</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/算法/">算法</a></li></ul>
 	</div>
 
       
@@ -318,15 +195,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/11/30/gyq's dirary/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          GYQ&#39;s diary
-        
-      </div>
-    </a>
   
+    <a href="/2016/11/30/gyq's dirary/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">GYQ&#39;s diary</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -358,7 +231,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="原码、反码、补码" data-title="二进制编码" data-url="http://yoursite.com/2016/11/27/原码、反码、补码/"></div>
+	<div class="ds-thread" data-thread-key="选择排序算法" data-title="排序算法" data-url="http://yoursite.com/2016/12/06/选择排序算法/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -540,23 +413,6 @@
     </div>
 
 </div>
-  </div><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-      all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-  });
-</script>
-
-<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<!-- End: Injected MathJax -->
-<!-- hexo-inject:end -->
+  </div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
