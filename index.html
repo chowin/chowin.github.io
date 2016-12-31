@@ -146,6 +146,173 @@
       <div class="body-wrap">
         
   
+    <article id="post-releative" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/31/releative/">releative</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="releative定位"><a href="#releative定位" class="headerlink" title="releative定位"></a>releative定位</h3><ol>
+<li>position：releative</li>
+<li>position：absolute<br>releative限制absolute定位<blockquote>
+<ul>
+<li>限制left/top/right/bottom定位</li>
+<li>限制z-index层级</li>
+<li>限制overflow下的嚣张气焰<h5 id="限制left-top-right-bottom"><a href="#限制left-top-right-bottom" class="headerlink" title="限制left/top/right/bottom"></a>限制left/top/right/bottom</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">&lt;head&gt;</div><div class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">    &lt;title&gt;Document&lt;/title&gt;</div><div class="line">    &lt;style&gt;</div><div class="line">        *&#123;</div><div class="line">            margin: 0px;</div><div class="line">        &#125;</div><div class="line">        #releative&#123;</div><div class="line">            width: 500px;</div><div class="line">            height: 500px;</div><div class="line">            margin-left: 200px;</div><div class="line">            background:green;</div><div class="line">            position: relative;</div><div class="line">        &#125;</div><div class="line">        #absolute&#123;</div><div class="line">            width: 200px;</div><div class="line">            height: 200px;</div><div class="line">            background: gray;</div><div class="line">            left: 0;</div><div class="line">            top: 0;</div><div class="line">            position: absolute;</div><div class="line">        &#125;</div><div class="line">    &lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">    &lt;div id=&quot;releative&quot;&gt;</div><div class="line">        &lt;div id=&quot;absolute&quot;&gt;</div><div class="line">        &lt;/div&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<h5 id="限制层级"><a href="#限制层级" class="headerlink" title="限制层级"></a>限制层级</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">&lt;head&gt;</div><div class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">    &lt;title&gt;Document&lt;/title&gt;</div><div class="line">    &lt;style&gt;</div><div class="line">        *&#123;</div><div class="line">            margin:0px;</div><div class="line">        &#125;</div><div class="line">        #releative1&#123;</div><div class="line">            width: 300px;</div><div class="line">            height: 300px;</div><div class="line">            background: red;</div><div class="line">            position: relative;</div><div class="line">            z-index: 4;</div><div class="line">        &#125;</div><div class="line">        #absolute1&#123;</div><div class="line">            width: 100px;</div><div class="line">            height: 100px;</div><div class="line">            background: green;</div><div class="line">            position: absolute;</div><div class="line">            top: 250px;</div><div class="line">            z-index: 3;</div><div class="line">        &#125;</div><div class="line">        #releative2&#123;</div><div class="line">            width: 300px;</div><div class="line">            height: 300px;</div><div class="line">            background: blue;</div><div class="line">            position: relative;</div><div class="line">            z-index: 6;</div><div class="line">        &#125;</div><div class="line">        #absolute2&#123;</div><div class="line">            width: 100px;</div><div class="line">            height: 100px;</div><div class="line">            background: gray;</div><div class="line">            position: absolute;</div><div class="line">            z-index: 2;</div><div class="line">        &#125;</div><div class="line">    &lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">    &lt;div id=&quot;releative1&quot;&gt;</div><div class="line">        &lt;div id=&quot;absolute1&quot;&gt;&lt;/div&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">    &lt;div id=&quot;releative2&quot;&gt;</div><div class="line">        &lt;div id=&quot;absolute2&quot;&gt;&lt;/div&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<h4 id="限制overflow溢出"><a href="#限制overflow溢出" class="headerlink" title="限制overflow溢出"></a>限制overflow溢出</h4><p>```</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/12/31/releative/" class="archive-article-date">
+  	<time datetime="2016-12-31T15:42:45.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-12-31</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html-css/">html/css</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-求最大公约数" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/31/求最大公约数/">最大公约数</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="求最大公约数"><a href="#求最大公约数" class="headerlink" title="求最大公约数"></a>求最大公约数</h3><p>好久没有写博客了，有时候想想自己真的懒死了，不知道学习什么，不知道坚持什么。或者学错了东西，坚持错的事物。</p>
+<p>两种方法</p>
+<h4 id="辗转求余法"><a href="#辗转求余法" class="headerlink" title="辗转求余法"></a>辗转求余法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">#include &lt;iostream&gt;</div><div class="line">using namespace std;</div><div class="line">int gcd1(int a,int b);</div><div class="line">int main()</div><div class="line">&#123;</div><div class="line">    int a,b;</div><div class="line">    cin&gt;&gt;a&gt;&gt;b;</div><div class="line">    cout&lt;&lt;gcd1(a,b)&lt;&lt;endl;</div><div class="line">&#125;</div><div class="line">int gcd1(int a,int b)</div><div class="line">&#123;</div><div class="line">    int tmp;</div><div class="line">    while(b!=0)</div><div class="line">    &#123;</div><div class="line">        tmp=a%b;</div><div class="line">        a=b;</div><div class="line">        b=tmp;</div><div class="line">    &#125;</div><div class="line">    return a;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>基本思路$a=x\times n+d\times n$</p>
+</blockquote>
+<h4 id="更相减损法"><a href="#更相减损法" class="headerlink" title="更相减损法"></a>更相减损法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">#include &lt;iostream&gt;</div><div class="line">using namespace std;</div><div class="line">int gcd1(int a,int b);</div><div class="line">int gcd2(int a,int b);</div><div class="line">int diguigcd1(int a,int b);</div><div class="line">int diguigcd2(int a,int b);</div><div class="line">int main()</div><div class="line">&#123;</div><div class="line">    int a,b;</div><div class="line">    cin&gt;&gt;a&gt;&gt;b;</div><div class="line">    cout&lt;&lt;gcd2(a,b)&lt;&lt;endl;</div><div class="line">&#125;</div><div class="line">int gcd2(int a,int b)</div><div class="line">&#123;</div><div class="line">    int tmp;</div><div class="line">    while(b&gt;0)</div><div class="line">    &#123;</div><div class="line">        if(a&gt;b)</div><div class="line">        tmp=a-b;</div><div class="line">    else</div><div class="line">        tmp=b-a;</div><div class="line">        a=b;</div><div class="line">        b=tmp;</div><div class="line">    &#125;</div><div class="line">    return a;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/12/31/求最大公约数/" class="archive-article-date">
+  	<time datetime="2016-12-31T15:42:45.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-12-31</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/算法/">算法</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-辞旧迎新" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="辞旧迎新"><a href="#辞旧迎新" class="headerlink" title="辞旧迎新"></a>辞旧迎新</h3><h4 id="即将过去的一年"><a href="#即将过去的一年" class="headerlink" title="即将过去的一年"></a>即将过去的一年</h4><p>慢慢回忆，2016年1月。刚从成都回来没多久，就和小管去南京厂子打工。<br><img src="../img/都江堰.jpg" alt="都江堰"><br>    当时的打算是准备挣点钱，可以在考完试后。正直早春，去武汉玩耍。<br>不过梦想总是和现实有差距的，我和管遭遇了打工史上最蛋疼的经历。不得不说，那是一群SB，老子忍着没打他们。几次，我都想一野过去，干翻在地，然他做人。熬到了周末，我外出寻觅图书馆，半个上午愣是被百度坑了5公里。中午在东南大学吃了点饭，然后混进他们的自习室，下午一直翻看数学。我记得晚上特别冷，自己还是硬着身子，逛遍了这所学校。</p>
+<p>最后，我和管没撑住，回去了。</p>
+<p>在家，我考虑到，转本可能会失败的。于是，开始了html/css的学习。</p>
+<p>舅舅病重，我去医院看他，出了医院，自己一个人走了好远的路。</p>
+<p>返校后，管就睡了一夜觉，然后没下文了。</p>
+<p>我和WJ，CW，ZMI，欧巴，七哥，一起准备考试。</p>
+<blockquote>
+<p>昔日龌龊不足夸，今朝放荡思无涯。考试结束了。</p>
+</blockquote>
+<p>4月，我回家；5月班长送我去徐州，在徐州见了学委和骚胡及他媳妇。</p>
+<p>6月，最后在学校的晚上，小彬彬和我抽了最后一次烟。也就两颗烟的功夫，却过去了3个小时。<br>第二天，我和磊哥最后离开的宿舍。</p>
+<p>7月，8月，终于把该死的驾照搞到了。</p>
+<p>8月初，我开始背单词，看深入理解计算机系统。</p>
+<p>9月，入校，独自一人。</p>
+<p>今晚，2016就过去了。</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/12/31/辞旧迎新/" class="archive-article-date">
+  	<time datetime="2016-12-31T15:04:39.395Z" itemprop="datePublished"><i class="icon-clock"></i>2016-12-31</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-选择排序算法" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -415,7 +582,7 @@
     
     	<section class="tools-section tools-section-tag">
     			<div class="widget tagcloud" id="js-tagcloud">
-    				<a href="/tags/日记/" style="font-size: 10px;">日记</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/计算机基础/" style="font-size: 10px;">计算机基础</a>
+    				<a href="/tags/html-css/" style="font-size: 10px;">html/css</a> <a href="/tags/日记/" style="font-size: 10px;">日记</a> <a href="/tags/算法/" style="font-size: 20px;">算法</a> <a href="/tags/计算机基础/" style="font-size: 10px;">计算机基础</a>
     			</div>
     	</section>
     

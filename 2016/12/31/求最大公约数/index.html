@@ -6,17 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 日记 | Wenix&#39;s Blog</title>
+  <title>最大公约数 | Wenix&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="南京工业职业技术能电学院13级，就读通信。现于末流二本，学习计算机。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Wenix's Blog">
-<meta property="og:url" content="http://yoursite.com/tags/日记/index.html">
+  <meta name="description" content="求最大公约数好久没有写博客了，有时候想想自己真的懒死了，不知道学习什么，不知道坚持什么。或者学错了东西，坚持错的事物。
+两种方法
+辗转求余法1234567891011121314151617181920#include &amp;lt;iostream&amp;gt;using namespace std;int gcd1(int a,int b);int main()&amp;#123;    int a,b;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="最大公约数">
+<meta property="og:url" content="http://yoursite.com/2016/12/31/求最大公约数/index.html">
 <meta property="og:site_name" content="Wenix's Blog">
-<meta property="og:description" content="南京工业职业技术能电学院13级，就读通信。现于末流二本，学习计算机。">
+<meta property="og:description" content="求最大公约数好久没有写博客了，有时候想想自己真的懒死了，不知道学习什么，不知道坚持什么。或者学错了东西，坚持错的事物。
+两种方法
+辗转求余法1234567891011121314151617181920#include &amp;lt;iostream&amp;gt;using namespace std;int gcd1(int a,int b);int main()&amp;#123;    int a,b;">
+<meta property="og:updated_time" content="2016-12-31T15:56:45.526Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Wenix's Blog">
-<meta name="twitter:description" content="南京工业职业技术能电学院13级，就读通信。现于末流二本，学习计算机。">
+<meta name="twitter:title" content="最大公约数">
+<meta name="twitter:description" content="求最大公约数好久没有写博客了，有时候想想自己真的懒死了，不知道学习什么，不知道坚持什么。或者学错了东西，坚持错的事物。
+两种方法
+辗转求余法1234567891011121314151617181920#include &amp;lt;iostream&amp;gt;using namespace std;int gcd1(int a,int b);int main()&amp;#123;    int a,b;">
   
     <link rel="alternative" href="/atom.xml" title="Wenix&#39;s Blog" type="application/atom+xml">
   
@@ -144,54 +151,118 @@
 </nav>
 
       <div class="body-wrap">
+        <article id="post-求最大公约数" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
         
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/30/gyq's dirary/" class="archive-article-date">
-  	<time datetime="2016-11-30T05:58:45.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/30/gyq's dirary/">GYQ&#39;s diary</a>
+    <h1 class="article-title" itemprop="name">
+      最大公约数
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="求最大公约数"><a href="#求最大公约数" class="headerlink" title="求最大公约数"></a>求最大公约数</h3><p>好久没有写博客了，有时候想想自己真的懒死了，不知道学习什么，不知道坚持什么。或者学错了东西，坚持错的事物。</p>
+<p>两种方法</p>
+<h4 id="辗转求余法"><a href="#辗转求余法" class="headerlink" title="辗转求余法"></a>辗转求余法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">#include &lt;iostream&gt;</div><div class="line">using namespace std;</div><div class="line">int gcd1(int a,int b);</div><div class="line">int main()</div><div class="line">&#123;</div><div class="line">    int a,b;</div><div class="line">    cin&gt;&gt;a&gt;&gt;b;</div><div class="line">    cout&lt;&lt;gcd1(a,b)&lt;&lt;endl;</div><div class="line">&#125;</div><div class="line">int gcd1(int a,int b)</div><div class="line">&#123;</div><div class="line">    int tmp;</div><div class="line">    while(b!=0)</div><div class="line">    &#123;</div><div class="line">        tmp=a%b;</div><div class="line">        a=b;</div><div class="line">        b=tmp;</div><div class="line">    &#125;</div><div class="line">    return a;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>基本思路$a=x\times n+d\times n$</p>
+</blockquote>
+<h4 id="更相减损法"><a href="#更相减损法" class="headerlink" title="更相减损法"></a>更相减损法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">#include &lt;iostream&gt;</div><div class="line">using namespace std;</div><div class="line">int gcd1(int a,int b);</div><div class="line">int gcd2(int a,int b);</div><div class="line">int diguigcd1(int a,int b);</div><div class="line">int diguigcd2(int a,int b);</div><div class="line">int main()</div><div class="line">&#123;</div><div class="line">    int a,b;</div><div class="line">    cin&gt;&gt;a&gt;&gt;b;</div><div class="line">    cout&lt;&lt;gcd2(a,b)&lt;&lt;endl;</div><div class="line">&#125;</div><div class="line">int gcd2(int a,int b)</div><div class="line">&#123;</div><div class="line">    int tmp;</div><div class="line">    while(b&gt;0)</div><div class="line">    &#123;</div><div class="line">        if(a&gt;b)</div><div class="line">        tmp=a-b;</div><div class="line">    else</div><div class="line">        tmp=b-a;</div><div class="line">        a=b;</div><div class="line">        b=tmp;</div><div class="line">    &#125;</div><div class="line">    return a;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/12/31/求最大公约数/" class="archive-article-date">
+  	<time datetime="2016-12-31T15:42:45.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-12-31</time>
+</a>
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日记/">日记</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/算法/">算法</a></li></ul>
 	</div>
 
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
-  
 
-    
+  
+<nav id="article-nav">
+  
+    <a href="/2016/12/31/releative/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          releative
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/12/31/辞旧迎新/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="求最大公约数" data-title="最大公约数" data-url="http://yoursite.com/2016/12/31/求最大公约数/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"wenix"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
 
 
       </div>
@@ -214,9 +285,9 @@
 		mathjax: false,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",
@@ -355,6 +426,23 @@
     </div>
 
 </div>
-  </div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  </div><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 </body>
 </html>
